@@ -7,4 +7,13 @@ public class NoNullArrayList<T> extends ArrayList<T>{
   public NoNullArrayList(int Capacity){
     super(Capacity);
   }
+
+  public T set(int index, T element) throws IllegalArgumentException{
+    if (element==null){
+      throw new IllegalArgumentException();
+    }else{
+      return super.set(index, element);
+    }
+
+  }
 }
