@@ -19,10 +19,16 @@ public class Tester{
     second.add(0,"One Half");
     ///System.out.println(second.toString());
     //second.add(0,null);
+    // third.add("A");
+    // third.add("C");
+    // third.add("D");
+    // third.add("B");
+    // System.out.println(third.toString());
     third.add("A");
     third.add("C");
-    third.add("D");
-    third.add("B");
+    third.add(1,"D");
     System.out.println(third.toString());
+
+
   }
 }
