@@ -29,6 +29,8 @@ public class Tester{
     third.add(1,"D");
     System.out.println(third.toString());
 
+    third.set(0,"B");
+    System.out.println(third.toString());
 
   }
 }
