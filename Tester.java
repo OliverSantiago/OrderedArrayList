@@ -14,6 +14,9 @@ public class Tester{
     //second.set(2,null);
     second.add("Added");
     System.out.println(second.toString());
-    second.add(null);
+    //second.add(null);
+    second.add(0,"One Half");
+    System.out.println(second.toString());
+    second.add(0,null);
   }
 }
