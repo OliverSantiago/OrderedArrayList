@@ -12,6 +12,8 @@ public class Tester{
     second.set(2,"set");
     System.out.println(second.toString());
     //second.set(2,null);
-
+    second.add("Added");
+    System.out.println(second.toString());
+    second.add(null);
   }
 }
