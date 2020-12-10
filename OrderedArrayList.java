@@ -17,6 +17,13 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     super.add(FindIndex(this, element),element);
   }
 
+  public T set(int index, T element){
+    T temp = super.get(index);
+    super.remove(index);
+    super.add(FindIndex(this, element),element);
+    return temp;
+  }
+
   private int FindIndex(OrderedArrayList<T> currentlist, T element){
     for (int i = 0; i < currentlist.size(); i++){
       if (currentlist.get(i).compareTo(element)==1||currentlist.get(i).compareTo(element)==0){
